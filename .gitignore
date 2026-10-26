@@ -1,0 +1,7 @@
+# Generated KiCad editor state and backups; keep source and symbol caches.
+/fp-info-cache
+*.sch-bak
+*.kicad_pcb-bak
+*.kicad_prl
+*-backups/
+~*.lck
