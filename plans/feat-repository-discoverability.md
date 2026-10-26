@@ -12,4 +12,6 @@
 - [x] Inspect source, history, existing attribution, and upstream licence (2026-10-26).
 - [x] Expand README and restore the upstream licence; ignore generated editor state. (2026-10-26).
 - [x] Update and verify GitHub description and topics. (2026-10-26).
-- [ ] Check links, review the full diff, commit, push, and open a PR.
+- [x] Check links, review the full diff, commit, push, and open a PR (2026-10-26).
+
+PR: https://github.com/makeristic/Adafruit_Feather/pull/1
