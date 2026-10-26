@@ -6,7 +6,7 @@ A KiCad project template for designing boards around the [Adafruit Feather speci
 
 ## Status
 
-This is a starting layout, with no routed PCB tracks. Add your own controller, power circuitry, and application circuit before fabrication. The checked-in PCB was saved by KiCad 5.1.2; its legacy schematic and project formats are retained. This documentation update does not establish electrical or manufacturing validation.
+This is a starting layout, with no routed PCB tracks. Add your own controller, power circuitry, and application circuit before fabrication. The checked-in PCB was saved by KiCad 5.1.2; its legacy schematic and project formats are retained. The [correctness audit](docs/code-audit-report.md) confirms schematic/PCB connector-net agreement and records remaining ERC, DRC, and mounting-hole concerns. It does not establish electrical or manufacturing validation.
 
 ## Use the template
 
@@ -16,7 +16,7 @@ git clone https://github.com/makeristic/Adafruit_Feather.git
 
 1. Copy the `Adafruit_Feather` directory, including `meta/`, into your KiCad user templates directory. The archived [KiCad 5.1 template-location documentation](https://docs.kicad.org/5.1/en/kicad/kicad.html#template_locations) describes the directory layout.
 2. In KiCad, create a project from a template and select this template under User Templates. Alternatively, open [Adafruit_Feather.pro](Adafruit_Feather.pro) to inspect the source.
-3. Install KiCad's standard symbol, footprint, and 3D-model libraries. The source uses standard `Connector`, `Connector_Generic`, and `power` symbols and connector footprints; 3D models reference `${KISYS3DMOD}`.
+3. Install KiCad's standard symbol, footprint, and 3D-model libraries. The source uses standard `Connector`, `Connector_Generic`, and `power` symbols and connector footprints. Retain the supplied `-cache.lib` when opening the legacy schematic. Models reference `${KISYS3DMOD}`; when using a newer release, check that this legacy path variable points to your installed 3D-model directory and resolve any changed model filenames.
 4. Work in a copy when opening with a newer KiCad release, which may convert the legacy files. Review the Feather pinout, connector orientation, and power circuitry, then run ERC and DRC on your completed design.
 
 ## Files
